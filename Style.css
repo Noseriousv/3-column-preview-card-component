@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Container {
+    border: 1px salmon solid;
+    display: flex;
+    flex-direction: row;
+    max-width: 910px;
+    height: 480px;
+}
+
+.Content-seadans {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+}
+
+.Content-seadans img {
+    max-width: 65px;
+    
+}
+
+.Content-seadans img, .Content-seadans h1, .Content-seadans p {
+    padding: 20px;
+}
+
+.Content-seadans a {
+    padding-top: 20px;
+    padding-left: 20px;
+}
