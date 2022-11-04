@@ -11,30 +11,78 @@ body {
 }
 
 #Container {
-    border: 1px salmon solid;
+    /* border: 1px salmon solid; */
     display: flex;
     flex-direction: row;
     max-width: 910px;
     height: 480px;
 }
 
-.Content-seadans {
+.Content-seadans, .Content-suvs, .Content-luxury {
     display: flex;
     flex-direction: column;
-    background-color: hsl(31, 77%, 52%);
     padding: 20px;
+    max-width: 260px;
 }
 
-.Content-seadans img {
+.Content-seadans {  
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px ;
+}
+
+.Content-suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.Content-luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px ;
+}
+
+.Content-seadans img, .Content-suvs img, .Content-luxury img {
     max-width: 65px;
     
 }
 
-.Content-seadans img, .Content-seadans h1, .Content-seadans p {
+.Content-seadans h1, .Content-suvs h1, .Content-luxury h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+.Content-seadans img, .Content-seadans h1, .Content-seadans p
+, .Content-suvs img, .Content-suvs h1, .Content-suvs p
+, .Content-luxury img, .Content-luxury h1, .Content-luxury p {
     padding: 20px;
 }
 
+
+.Content-seadans p, .Content-suvs p, .Content-luxury p {
+    font-family: 'Lexend Deca', sans-serif; 
+    font-size: 0.938rem;
+    color: hsla(0, 0%, 100%, 0.65);
+}
+
+.Content-seadans a, .Content-suvs a, .Content-luxury a {
+    margin: 80px 0 0 20px;
+    max-width: 110px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.938rem;
+    border-radius: 20px;
+
+}
+
 .Content-seadans a {
-    padding-top: 20px;
-    padding-left: 20px;
+    color: hsl(31, 77%, 52%);
+}
+
+.Content-suvs a {
+    color: hsl(184, 100%, 22%);
+}
+
+.Content-luxury a {
+    color: hsl(179, 100%, 13%);   
 }
