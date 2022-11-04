@@ -10,12 +10,14 @@ html {
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 #Container {
-    /* border: 1px salmon solid; */
+    
     display: flex;
     flex-direction: row;
     max-width: 910px;
@@ -31,7 +33,7 @@ body {
 
 .Content-seadans {  
     background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 0px 0px 10px ;
+    /* border-radius: 10px 0px 0px 10px ; */
 }
 
 .Content-suvs {
@@ -40,7 +42,7 @@ body {
 
 .Content-luxury {
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0px 10px 10px 0px ;
+    /* border-radius: 0px 10px 10px 0px ; */
 }
 
 .Content-seadans img, .Content-suvs img, .Content-luxury img {
@@ -67,7 +69,7 @@ body {
 }
 
 .Content-seadans a, .Content-suvs a, .Content-luxury a {
-    margin: 80px 0 30px 20px;
+    /* margin: 80px 0 30px 20px; */
     max-width: 110px;
     padding: 10px;
     text-align: center;
@@ -110,8 +112,43 @@ body {
 }
 
 @media screen and (max-width: 900px){
+
+    body {
+        min-height: 70vh;
+        
+    }
+
     #Container {
         flex-direction: column;
     }
-    
+    .Content-seadans, .Content-suvs, .Content-luxury  {
+        max-width: 200px;
+        max-height: 350px;
+
+    }
+
+    .Content-seadans {  
+        border-radius: 10px 10px 0px 0px ; 
+   }
+
+   .Content-luxury {
+        border-radius: 0px 0px 10px 10px ;
+   }
+
+}
+
+@media screen and (min-width: 901px) and (max-width: 3000px) {
+    .Content-seadans a, .Content-suvs a, .Content-luxury a {
+         margin: 60px 0 30px 20px; 
+    }
+
+    .Content-seadans {  
+         border-radius: 10px 0px 0px 10px ; 
+    }
+
+    .Content-luxury {
+         border-radius: 0px 10px 10px 0px ;
+    }
+
+
 }
